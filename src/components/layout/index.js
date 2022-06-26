@@ -1,12 +1,13 @@
-import './index.scss';
+import React from 'react'
+import './index.scss'
 import Sidebar from '../Sidebar'
 
-const Layout = () => {
-    return (
-        <>
-            <Sidebar />
-        </>
-    )
+function Layout() {
+  return (
+    <>
+        <Sidebar />
+    </>
+  )
 }
 
-export default Layout;
+export default Layout
