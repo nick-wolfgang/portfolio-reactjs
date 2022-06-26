@@ -1,10 +1,18 @@
 import React from 'react'
 import './index.scss'
 
-function index() {
+function AnimatedLetters({letterClass, strArray, idx}) {
   return (
-    <div>index</div>
+    <span>
+        {
+            strArray.((char, i) =>(
+                <span key={char + i} className={`${letterClass} _${i + idx}`}>
+                    {char}
+                </span>
+            ))
+        }
+    </span>
   )
 }
 
-export default index
+export default AnimatedLetters
