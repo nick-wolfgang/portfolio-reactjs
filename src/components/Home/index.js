@@ -9,11 +9,11 @@ function Home() {
   const nameArray = ['W','o','l','f','g','a','n','g']
   const jobArray = ['R','e','a','c','t',' ','d','e','v','e','l','o','p','e','r','.']
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //   setLetterClass('text-animate-hover')
-  // }, 4000)
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+  }, 4000)
+  }, [])
 
   return (
     <div className='container home-page'>
@@ -23,8 +23,8 @@ function Home() {
           <span className={`${letterClass} _ 12`}>i,</span> 
 
           <br />
-          <span className={`${letterClass} _ 13`}>I</span> 
-          <span className={`${letterClass} _ 14`}>'m_</span> 
+          <span className={`${letterClass} _ 13`}>I'</span> 
+          <span className={`${letterClass} _ 14`}>m_</span> 
           {/* <img src={LogoTitle} alt="developer"/> */}
           <AnimatedLetters 
             letterClass={letterClass}

@@ -9,7 +9,7 @@
 .text-animate-hover {
     min-width: 10px;
     display: inline-block;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
 
     &:hover {
         animation: rubberBand 1s;
